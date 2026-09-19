@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DocuShield | Forensic Triage</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- ========================= SIDEBAR ========================== -->
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="mark">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>docu<span>shield</span>
+        </div>
+
+        <p class="rail-label">WORKSPACE</p>
+
+        <nav>
+            <button class="nav active">
+                ▦
+                <span>Overview</span>
+            </button>
+
+            <button class="nav">
+                ◫
+                <span>Triage queue</span>
+                <b>14</b>
+            </button>
+
+            <button class="nav scan-trigger">
+                ⌁
+                <span>New scan</span>
+            </button>
+
+            <button class="nav">
+                ◎
+                <span>Registry lookup</span>
+            </button>
+        </nav>
+
+        <p class="rail-label lower-label">INTELLIGENCE</p>
+
+        <nav>
+            <button class="nav">
+                ◇
+                <span>Pattern monitor</span>
+            </button>
+
+            <button class="nav">
+                ☷
+                <span>Audit trail</span>
+            </button>
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="side-bottom">
+             <div class="secure">
+                <i></i>
+                <div>
+                    <strong>Secure environment</strong>
+                    <small>All systems operational</small>
+                </div>
+            </div>
+
+            <button class="profile" type="button">
+                <b id="profileInitials">AO</b>
+               <span id="profileName">Authorized officer <small id="profileRole">Secure workspace</small> </span>
+            </button>
+            <a class="sign-out" id="signOut" href="login.html">Sign out</a>
+        </div>
+    </aside>
+
+
+    <!-- ========================= MAIN CONTENT ========================== -->
+    <main>
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+
+        <!-- ========================= HEADER ========================== -->
+        <header>
+
+            <div class="crumb"> OPERATIONS<b>/</b>FORENSIC TRIAGE </div>
+            <div class="top-actions">
+                <button class="circle"> ♧  <i></i></button>
+                <button class="circle">?</button>
+                <button class="export">Export report</button>
+            </div>
+        </header>
+
+
+        <!-- ========================= HERO SECTION ========================== -->
+        <section class="hero">
+            <div>
+                <p class="eyebrow"> RURAL CENTRAL OPERATIONS </p>
+                <h1>  Forensic triage<span>at a glance.</span> </h1>
+                <p class="intro">Live intelligence across identity documents and property instruments. </p>
+
+                <div class="pills">
+                    <span>
+                        <i></i>
+                        Monitoring 42 locations
+                    </span>
+
+                    <span id="currentTime">Loading current time...</span>
+                </div>
+            </div>
+
+            <button class="primary scan-trigger">
+                <b>＋</b> Start new scan</button>
+        </section>
+
+
+        <!-- ========================= METRICS ========================== -->
+        <section class="metrics">
+
+            <!-- Metric 1 -->
+            <article class="metric">
+
+                <div>
+                    <span class="icon green">✓</span>
+                    <em class="up">↗ 12.4%</em>
+                </div>
+
+                <strong>2,847</strong>
+
+                <p>Documents cleared today</p>
+
+                <div class="bars">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+            </article>
+
+
+            <!-- Metric 2 -->
+            <article class="metric">
+
+                <div>
+                    <span class="icon amber">!</span>
+                    <em class="warn">↗ 3 new</em>
+                </div>
+
+                <strong>14</strong>
+
+                <p>    High-risk cases pending
+                </p>
+
+                <div class="risk">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i class="hot"></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+            </article>
+
+
+            <!-- Metric 3 -->
+            <article class="metric">
+
+                <div>
+                    <span class="icon blue">⌁</span>
+                    <em class="up">↗ 8.1%</em>
+                </div>
+
+                <strong> 98.6<small>%</small></strong>
+
+                <p> Verification accuracy</p>
+
+                <div class="progress">
+                    <i></i> </div>
+                <small>
+                    Above 96% operational threshold
+                </small>
+            </article>
+
+
+            <!-- Metric 4 -->
+            <article class="metric">
+
+                <div>
+                    <span class="icon violet">◉</span>
+
+                    <em class="live">
+                        <i></i> LIVE </em>
+                </div>
+
+                <strong>38<small>s</small></strong>
+
+                <p>Average decision time</p>
+
+                <div class="target">
+
+                    <span>
+                        Target
+                        <b>&lt;60s</b>
+                    </span>
+
+                    <i> <b></b></i>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- ========================= QUEUE + INTEGRITY ========================== -->
+        <section class="grid">
+
+            <!-- Priority Queue -->
+            <article class="panel queue">
+
+                <div class="panel-head">
+
+                    <div>
+                        <h2> Priority triage queue</h2>
+                        <p>Cases requiring immediate review</p>
+                    </div>
+
+                    <button> View all<b>→</b>
+                    </button>
+
+                </div>
+
+
+                <div class="cases">
+
+                    <!-- Case 1 -->
+                    <button class="case selected">
+
+                        <span class="type pan">PAN</span>
+
+                        <span>
+                            <b>DL-2026-0919-0842</b>
+                            <small>Property deed · Dindigul SRO </small>
+                        </span>
+
+                        <em class="critical">
+                            Critical
+                            <i>92</i>
+                        </em>
+
+                        <strong>›</strong>
+
+                    </button>
+
+
+                    <!-- Case 2 -->
+                    <button class="case">
+
+                        <span class="type uid">UID
+                        </span>
+
+                        <span>
+                            <b>BK-2026-0919-1137</b>
+                            <small>
+                                Loan KYC · Madurai North
+                            </small>
+                        </span>
+
+                        <em class="high">
+                            High
+                            <i>78</i>
+                        </em>
+
+                        <strong>›</strong>
+
+                    </button>
+
+
+                    <!-- Case 3 -->
+                    <button class="case">
+
+                        <span class="type deed">
+                            DEED
+                        </span>
+
+                        <span>
+                            <b>DL-2026-0919-0838</b>
+                            <small>
+                                Settlement deed · Karur SRO
+                            </small>
+                        </span>
+
+                        <em class="high">
+                            High
+                            <i>71</i>
+                        </em>
+
+                        <strong>›</strong>
+
+                    </button>
+
+
+                    <!-- Case 4 -->
+                    <button class="case">
+
+                        <span class="type pan">
+                            PAN
+                        </span>
+
+                        <span>
+                            <b>BK-2026-0919-1129</b>
+                            <small>
+                                Account opening · Theni branch
+                            </small>
+                        </span>
+
+                        <em class="review">
+                            Review
+                            <i>58</i>
+                        </em>
+
+                        <strong>›</strong>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Integrity Posture -->
+            <article class="panel posture">
+
+                <div class="panel-head">
+
+                    <div>
+                        <h2>
+                            Integrity posture
+                        </h2>
+
+                        <p>
+                            Across all incoming documents
+                        </p>
+                    </div>
+
+                    <button>
+                        •••
+                    </button>
+
+                </div>
+
+
+                <div class="donut-row">
+
+                    <div class="donut">
+
+                        <span>
+                            <b>96.8%</b>
+                            <small>verified</small>
+                        </span>
+
+                    </div>
+
+
+                    <div class="legend">
+
+                        <p>
+                            <i></i>
+                            Verified
+                            <b>2,756</b>
+                        </p>
+
+                        <p>
+                            <i></i>
+                            Under review
+                            <b>77</b>
+                        </p>
+
+                        <p>
+                            <i></i>
+                            Flagged
+                            <b>14</b>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <b>✓</b>
+
+                    <p>
+                        <strong>
+                            System confidence is strong
+                        </strong>
+
+                        Automatic clearance is active for low-risk submissions.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ========================= CHART + SIGNALS ========================== -->
+        <section class="grid bottom">
+
+            <!-- Threat Activity -->
+            <article class="panel chart-panel">
+
+                <div class="panel-head">
+
+                    <div>
+                        <h2>
+                            Threat activity
+                        </h2>
+
+                        <p>
+                            Detected anomalies · Last 24 hours
+                        </p>
+                    </div>
+
+                    <button class="period">
+                        24 hours⌄
+                    </button>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="scale">
+                        80<br>
+                        60<br>
+                        40<br>
+                        20<br>
+                        0
+                    </div>
+
+
+                    <svg viewBox="0 0 580 150" preserveAspectRatio="none" >
+
+                        <defs>
+
+                            <linearGradient id="g" x1="0" x2="0" y1="0" y2="1" >
+
+                                <stop stop-color="#e8a654" stop-opacity=".38" />
+
+                                <stop offset="1" stop-color="#e8a654" stop-opacity="0" />
+
+                            </linearGradient>
+
+                        </defs>
+
+
+                        <path class="lines" d=" M0 4H580 M0 41H580 M0 78H580 M0 115H580 M0 150H580 " />
+
+
+                        <path class="area" d=" M0 128 L36 124 L72 130 L108 106 L144 114 L180 95 L216 116 L252 88 L288 96 L324 78 L360 93 L396 56 L432 79 L468 27 L504 58 L540 13 L580 42 V150 H0 Z " />
+
+
+                        <path class="line" d=" M0 128 L36 124 L72 130 L108 106 L144 114 L180 95 L216 116 L252 88 L288 96 L324 78 L360 93 L396 56 L432 79 L468 27 L504 58 L540 13 L580 42 " />
+
+                        <circle cx="540" cy="13" r="5" />
+
+                    </svg>
+
+                </div>
+
+
+                <div class="axis">
+                    <span>00:00</span>
+                    <span>04:00</span>
+                    <span>08:00</span>
+                    <span>12:00</span>
+                    <span>16:00</span>
+                    <span>20:00</span>
+                    <span>Now</span>
+                </div>
+
+
+                <div class="chart-foot">
+
+                    <span>
+                        <i></i>
+                        Anomaly events
+                    </span>
+
+                    <b>
+                        ↑ 18%
+                        <small>
+                            vs. previous period
+                        </small>
+                    </b>
+
+                </div>
+
+            </article>
+
+
+            <!-- Latest Signals -->
+            <article class="panel signals">
+
+                <div class="panel-head">
+
+                    <div>
+                        <h2>
+                            Latest signals
+                        </h2>
+
+                        <p>
+                            Intelligence feed
+                        </p>
+                    </div>
+
+                    <em class="feed">
+                        <i></i>
+                        Live
+                    </em>
+
+                </div>
+
+
+                <div class="signal">
+
+                    <b class="red">
+                        ⌘
+                    </b>
+
+                    <p>
+                        <strong>
+                            QR signature mismatch
+                        </strong>
+
+                        <small>
+                            Property deed · Dindigul SRO
+                        </small>
+                    </p>
+
+                    <time>2m</time>
+
+                </div>
+
+
+                <div class="signal">
+
+                    <b class="orange">
+                        ⌁
+                    </b>
+
+                    <p>
+                        <strong>
+                            Substrate irregularity
+                        </strong>
+
+                        <small>
+                            New scan · Madurai North
+                        </small>
+                    </p>
+
+                    <time>11m</time>
+
+                </div>
+
+
+                <div class="signal">
+
+                    <b class="sky">
+                        ◎
+                    </b>
+
+                    <p>
+                        <strong>
+                            Registry record matched
+                        </strong>
+
+                        <small>
+                            Loan KYC · Theni branch
+                        </small>
+                    </p>
+
+                    <time>18m</time>
+
+                </div>
+
+
+                <button class="all">
+                    See all signals
+                    <b>→</b>
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================= NEW SCAN MODAL ========================== -->
+    <div class="modal" id="modal">
+
+        <div class="dialog">
+
+            <button id="close">
+                ×
+            </button>
+
+            <p class="eyebrow">
+                NEW FORENSIC INTAKE
+            </p>
+
+            <h2>
+                Start a document scan
+            </h2>
+
+            <p>
+                Choose an intake route. Files remain in the secure local processing boundary.
+            </p>
+
+
+            <div>
+
+                <button>
+
+                    <b>▣</b>
+
+                    <span>
+                        Upload document
+
+                        <small>
+                            PDF, JPG, PNG up to 25 MB
+                        </small>
+                    </span>
+
+                </button>
+
+
+                <button>
+
+                    <b>⌁</b>
+
+                    <span> Use scanner <small>   Connect an approved capture device </small>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
